@@ -56,7 +56,7 @@ Solo alcance a hacer la configuración inicial y un par de test
 - npm run test:coverage
 
 ## debug
-- el proyecto tiene un midleware para debugar las acciones del store por consola
+- el proyecto tiene un midleware para hacer debug de las acciones del store por consola
 
 Solo pude trabajar un dia en la prueba tecnica, agrego lista de elementos por mejorar
 1. Ampliacion de los test a un 100% del coverage
