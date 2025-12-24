@@ -58,8 +58,10 @@ Solo alcance a hacer la configuración inicial y un par de test
 ## debug
 - el proyecto tiene un midleware para hacer debug de las acciones del store por consola
 
-Solo pude trabajar un dia en la prueba tecnica, agrego lista de elementos por mejorar
-1. Ampliacion de los test a un 100% del coverage
-2. Conmfigurar algunos inputs de test con data-testid
+## notas
+Solo pude trabajar un día en la prueba técnica, agrego lista de elementos por mejorar
+1. Ampliación de los test a un 100% del coverage
+2. Configurar algunos inputs de test con data-testid
+3. Hay un marcaje de error en una archivo de estructura de configuración de los test por TypeScript, pero la configuración es la correcta solo se marca como warning
 
 
