@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node modules (Dependencias)
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor folders and files (IDE Config)
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS Specific Files (Crucial para OSX)
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX/
+
+# Vite / Build outputs
+dist/
+dist-ssr/
+*.payload.json
+
+# Test files
+coverage/
+__snapshots__/
+
+# TypeScript
+*.tsbuildinfo

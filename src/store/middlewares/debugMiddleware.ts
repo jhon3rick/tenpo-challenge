@@ -1,0 +1,24 @@
+import type { Middleware } from "@reduxjs/toolkit";
+
+export default (): Middleware => {
+  return (storeApi) => (next) => (action) => {
+    const prevState = storeApi.getState();
+    const result = next(action);
+    const nextState = storeApi.getState();
+
+    if (prevState !== nextState) {
+      const actionType =
+        typeof action === "object" && action && "type" in action
+          ? String((action as { type: unknown }).type)
+          : "UNKNOWN_ACTION";
+
+      console.groupCollapsed(`🧠 Redux: ${actionType}`);
+      console.log("Prev state:", prevState);
+      console.log("Next state:", nextState);
+      console.log("Action:", action);
+      console.groupEnd();
+    }
+
+    return result;
+  };
+};
